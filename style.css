@@ -130,6 +130,12 @@ body {
 .red.block.aside aside {
 
     display: flex;
+    /*
+    Na temat flexa za długo by się rozwodzić więc poprostu dam dobre źródła na ten temat:
+    
+    [PL] https://webroad.pl/html5-css3/2466-css3-flexbox-podstawowe-zalozenia
+    [ENG] https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    */
     flex-flow: column;
 
 }
@@ -168,7 +174,7 @@ body {
 
 .white.block.article-content {
 
-    width: calc(100% - 40px);
+    width: calc(100% - 40px); /*Zwykła funkcja css, w tym przypadku oblicza 100% na piksele i odejmuje 40pikseli*/
     height: calc(100% - 40px);
 
     position: relative;
