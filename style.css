@@ -1,7 +1,9 @@
 body {
 
     background-image: url('grafika/drozdzowka.jpg'); 
-    background-size: 10%;
+    background-size: 10%; 
+    /*Tu chyba logiczne, ustawiamy jako tło strony
+    i skalujemy je żeby miało 10% poczatkowej wielkosci*/
 
 }
 
@@ -12,7 +14,7 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
 
-    width: 900px;
+    width: 1100px;
     height: 600px;
 
     background: rgba(173, 173, 173, 0.4);
@@ -29,7 +31,16 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+    /*Dzieki temu przemieszczamy diva tak ze teraz środek diva znajduje się
+    idealnie na środku, bez tego na środku jest lewy górny róg diva
+    
+    Literatura na ten temat:
+
+    [PL] http://webmaster.helion.pl/index.php/css3-transformacje
+    [ENG] https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
+    
+    */
 
 }
 
@@ -41,20 +52,20 @@ body {
 
 .red.block.header {
 
-    width: 880px;
+    width: 1060px;
     height: 150px;
 
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
-
-    margin-top: 10px;
+    transform: translate(-50%, 20px);
 
 }
 
 .red.block.header h1 {
 
-    width: 700px; 
+    width: 900px; 
+
+    text-align: center;
 
     padding: 0;
     margin: 0;
